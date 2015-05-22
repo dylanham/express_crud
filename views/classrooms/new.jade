@@ -1,0 +1,14 @@
+h1 New Classroom
+
+form(actions='/', method='post')
+  div
+    label(for='name') Name 
+      input(name='name' type='string')
+  div
+    label(for='hasKeg') Keg 
+    input(name='hasKeg' type='checkbox')
+  div
+    label(for='numberOfSeats') Number of Seats 
+    input(name='numberOfSeats' type='number')
+  div
+    input(type="submit" value="Submit")

@@ -1,0 +1,10 @@
+h1 List of all classrooms
+a(href="/classrooms/new") New Classroom
+
+ul
+  for classroom in classrooms
+    li= classroom.name = ' has ' + classroom.numberOfSeats + ' seats in in it'
+    a(href="/classrooms/#{classroom._id}") See Details
+    div
+      form(action='classrooms/#{classroom._id}/delete' method='post')
+        input(type='submit' value='Delete')

@@ -1,0 +1,14 @@
+h1 Update Classroom
+
+form(actions='/', method='post')
+  div
+    label(for='name') Name 
+      input(name='name' type='string' value='#{classroom.name}')
+  div
+    label(for='hasKeg') Keg 
+    input(name='hasKeg' type='checkbox')
+  div
+    label(for='numberOfSeats') Number of Seats 
+    input(name='numberOfSeats' type='number' value= '#{classroom.numberOfSeats}')
+  div
+    input(type="submit" value="Update")
